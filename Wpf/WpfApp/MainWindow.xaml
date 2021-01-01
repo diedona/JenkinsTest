@@ -7,6 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Label>Hello, World</Label>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0">
+            <Label>Hello, World</Label>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1">
+            <Label>Eu estou aqui</Label>
+            <Label>E eu aqui!</Label>
+        </StackPanel>
     </Grid>
 </Window>
